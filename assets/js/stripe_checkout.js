@@ -27,6 +27,7 @@ jQuery( function( $ ) {
 		},
 
 		isStripeModalNeeded: function( e ) {
+			var $required_inputs;
 			var token = wc_stripe_form.form.find( 'input.stripe_token' );
 
 			// If this is a stripe submission (after modal) and token exists, allow submit.
